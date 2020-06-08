@@ -1,0 +1,120 @@
+- var whatPage = "index";
+
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+
+        include includes/head.pug
+  
+    body
+
+        //- Navbar
+        include sections/navbar.pug
+
+
+        //- Preloader
+        div(id="preloader")
+            div(class="spinner")
+
+
+        //- Home Page
+        div(id="home-page")
+
+                // Header
+                header
+
+                    // Hero Slider
+                    section(id="home-slider")
+                        div(class="container-fluid")
+                            div(class="owl-carousel" id="owl-home")
+                                div(class="bg-image" style="background-image: url(img/home-slider-img-1.jpg);")
+                                div(class="bg-image" style="background-image: url(img/home-slider-img-1.jpg);")
+                                div(class="bg-image" style="background-image: url(img/home-slider-img-1.jpg);")
+                        
+
+                    // Presentation
+                    section(class="" id="presentation")
+                        div(class="container")
+                            div(class="row justify-content-center")
+                                div(class="col-lg-8")
+                                    h1(class="presentation-title") Ceci est une simulation du grand titre
+                                    p(class="presentation-text") Ceci est une simulation du sous titre sur deux lignes. Ceci est une simulation du sous titre sur deux lignes 
+
+
+                // Services
+                section(class="section" id="services")
+                    div(class="container")
+                        div(class="services-wrap text-center")
+                            div(class="owl-carousel" id="owl-services")
+                                div(class="single-service")
+                                    div(class="service-icon")
+                                        img(src="img/img1.png")
+                                    h3(class="service-title") Lorem ipsum
+                                    p(class="service-text") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed libero nisi. Aenean ut dui velit. elementum venenatis gravida id,...
+                                div(class="single-service")
+                                    div(class="service-icon")
+                                        img(src="img/img2.png")
+                                    h3(class="service-title") Lorem ipsum
+                                    p(class="service-text") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed libero nisi. Aenean ut dui velit. elementum venenatis gravida id,...
+                                div(class="single-service")
+                                    div(class="service-icon")
+                                        img(src="img/img3.png")
+                                    h3(class="service-title") Lorem ipsum
+                                    p(class="service-text") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed libero nisi. Aenean ut dui velit. elementum venenatis gravida id,...
+
+
+                // News
+                section(class="section bg-light" id="news")
+                    div(class="container")
+                        div(class="news-wrap")
+                            div(class="row")
+                                div(class="col-lg-4")
+                                    div(class="single-news")
+                                        dic(class="news-tag") Services
+                                        h3(class="news-title") Ceci est une simulation du titre de l'actualité
+                                        p(class="news-body") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed libero nisi. Aenean ut dui velit. Duis sapien urna. elementum venenatis gravida id,...
+                                        a(href="#" class="news-link") En savoir plus
+                                div(class="col-lg-4")
+                                    div(class="single-news")
+                                        dic(class="news-tag") Services
+                                        h3(class="news-title") Ceci est une simulation du titre de l'actualité
+                                        p(class="news-body") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed libero nisi. Aenean ut dui velit. Duis sapien urna. elementum venenatis gravida id,...
+                                        a(href="#" class="news-link") En savoir plus
+                                div(class="col-lg-4")
+                                    div(class="single-news")
+                                        dic(class="news-tag") #International
+                                        h3(class="news-title") Ceci est une simulation du titre de l'actualité
+                                        p(class="news-body") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed libero nisi. Aenean ut dui velit. Duis sapien urna. elementum venenatis gravida id,...
+                                        a(href="#" class="news-link") En savoir plus
+                                div(class="col-lg-4")
+                                    div(class="single-news")
+                                        dic(class="news-tag") Nos Metiers
+                                        h3(class="news-title") Ceci est une simulation du titre de l'actualité
+                                        p(class="news-body") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed libero nisi. Aenean ut dui velit. Duis sapien urna. elementum venenatis gravida id,...
+                                        a(href="#" class="news-link") En savoir plus
+                                div(class="col-lg-4")
+                                    div(class="single-news")
+                                        dic(class="news-tag") Services
+                                        h3(class="news-title") Ceci est une simulation du titre de l'actualité
+                                        p(class="news-body") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed libero nisi. Aenean ut dui velit. Duis sapien urna. elementum venenatis gravida id,...
+                                        a(href="#" class="news-link") En savoir plus
+                                div(class="col-lg-4")
+                                    div(class="single-news")
+                                        dic(class="news-tag") Rejougnez-nous
+                                        h3(class="news-title") Ceci est une simulation du titre de l'actualité
+                                        p(class="news-body") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed libero nisi. Aenean ut dui velit. Duis sapien urna. elementum venenatis gravida id,...
+                                        a(href="#" class="news-link") En savoir plus
+
+        
+        // Back To Top    
+        a(href="#" class="back-to-top")
+            i(class="fa fa-chevron-up")
+
+
+        //- Footer
+        include sections/footer.pug
+
+
+        // Scripts
+        include includes/scripts.pug
