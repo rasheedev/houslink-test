@@ -82,18 +82,6 @@ $(document).ready(function(){
         }
     });
 
-    
-    $(".mainmenu .mainmenu-links a").each(function () {
-        if (this.href == window.location.href) {
-            $(this).parent().addClass("active"); 
-            $(this).parent().parent().parent().addClass("active"); 
-            $(this).parent().parent().parent().parent().parent().addClass("active"); 
-        }
-    });
-    if(window.location.pathname == "/"){
-        $(".mainmenu .mainmenu-links > li:first").addClass("active");
-    }
-
 
     /* Back to Top */ 
    $(window).on("scroll", function() {
@@ -144,11 +132,11 @@ $(document).ready(function(){
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         responsive: {
             0: {
-                items:2,
+                items:1,
                 nav: true
             },
             600: {
-                items:3,
+                items:2,
                 nav: true
             },
             1000: {

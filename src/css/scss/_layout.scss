@@ -2,6 +2,7 @@
 /* Home Page
 /*-------------------------------------------------------*/
 #home-page {
+
     /* Home Slider */
     #home-slider {
         display: flex!important;
@@ -11,7 +12,6 @@
             position: relative;
             background-size: cover;
             background-position: center center;
-            // height: 100vh;
             min-height: 500px;
         }
         .owl-carousel {
@@ -49,11 +49,6 @@
             }
         } 
     }
-    @media (max-width: 991.98px) {
-        #home .bg-image {
-            height: 550px;
-        }
-    }
 
     /* Presentation */
     #presentation {
@@ -61,21 +56,23 @@
         background-color: $main-color;
         color: #fff;
         .container {
-            padding: 40px 0;
             border-bottom: 4px solid $main-color2;
         }
-        .presentation-title {
-            color: #fff;
-            font-size: 26px;
-            font-weight: 800;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-        }
-        .presentation-text {
-            color: #fff;
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 30px;
+        .presentation-wrap {
+            padding: 40px 0;
+            .presentation-title {
+                color: #fff;
+                font-size: 26px;
+                font-weight: 800;
+                text-transform: uppercase;
+                margin-bottom: 15px;
+            }
+            .presentation-text {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+            }
         }
     }
 
@@ -202,18 +199,11 @@
                 margin-bottom: 20px;
                 font-size: 16px;
             }
-            p{
-                color: #a5b4cd;
-                margin-bottom: 5px;
-            }
             ul {
                 margin: 0;
                 color: #a5b4cd;
                 li {
                     margin-bottom: 5px;
-                    span {
-                        padding-right: 5px;
-                    }
                     a{
                         color: #a5b4cd;
                         font-size: 15px;
@@ -224,18 +214,10 @@
                     }
                 }
             }
-            address { 
-                color: #aaa;
-                margin-bottom: 0;
-                span {
-                    display: block;
-                    padding-bottom: 5px;
-                }
-            }
         }
     }
     .footer-copyright {
-        background-color: $main-color;
+        background-color: #23443f;
         padding: 20px 0;
         p {
             margin: 0;
@@ -244,39 +226,68 @@
         }
         .newsletter {
             form {
-                label {
-                    font-size: 16px;
-                    font-weight: 500;
-                    color: #fff;
-                    margin-right: 20px !important;
-                }
-                input {
-                    background-color: transparent;
-                    border: 1px solid #91a29f;
-                    font-size: 13px;
-                }
-                .btn {
-                    background-color: transparent;
-                    height: 45px;
-                    width: 50px;
+                .form-group {
+                    margin-bottom: 0;
+                    float: right;
+                    margin-bottom: 20px;
                     text-align: center;
-                    line-height: 45px;
-                    font-size: 18px;
-                    padding: 0;
-                    border: 1px solid #91a29f;
-                    margin-left: 10px;
-                    color: #91a29f;
+                }
+                .form-group{
+                    label {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #fff;
+                        margin-right: 10px !important;
+                        display: inline-block;
+                    }
+                    .form-control {
+                        background-color: transparent;
+                        border: 1px solid #91a29f;
+                        font-size: 13px;
+                        max-width: 190px;
+                        display: inline-block;
+                        color: #fff;
+                        &:focus {
+                            border-color: $main-color2;
+                        }
+                    }
+                    .btn {
+                        background-color: transparent;
+                        height: 45px;
+                        width: 50px;
+                        text-align: center;
+                        line-height: 45px;
+                        font-size: 18px;
+                        padding: 0;
+                        border: 1px solid #91a29f;
+                        margin-left: 5px;
+                        color: #91a29f;
+                        display: inline-block;
+                        &:hover {
+                            background-color: $main-color2;
+                            color: #fff;
+                            border-color: $main-color2;
+                        }
+                    }
                 }
             }
         }
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
     .footer {
         .footer-copyright {
-            ul {
-                text-align: center;
-                margin-top: 15px;
+            .newsletter {
+                form {
+                    .form-group {
+                        text-align: center;
+                        float: none;
+                    }
+                    label {
+                        display: block;
+                        margin-bottom: 5px !important;
+                    }
+                }
             }
             p {
                 text-align: center;
@@ -297,13 +308,10 @@
     width: 40px;
     border-radius: 50%;
     z-index: 10000;
-    background-color: $main-color2;
+    background-color: darken($main-color2, 3);
     display: none;
     &:hover {
         background-color: darken($main-color2, 8);
-        i {
-            transform: translateY(-1px);
-        }
     }
     i {
         color: #fff;
@@ -323,7 +331,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #fff;
+    background-color: $main-color;
     z-index: 9999999;
     height: 100vh;
     display: flex;

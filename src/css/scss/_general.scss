@@ -2,7 +2,7 @@
 /* General
 /*-------------------------------------------------------*/
 
-/* General tags */
+/* Tags */
 body {
   font-family: $default-font;
   font-size: 15px;
@@ -15,15 +15,15 @@ body {
   outline: none;
 }
 ::-moz-selection {
-  background: $main-color;
+  background: $main-color2;
   color: #fff;
 }
 ::-webkit-selection {
-  background: $main-color;
+  background: $main-color2;
   color: #fff;
 }
 ::selection {
-  background: $main-color;
+  background: $main-color2;
   color: #fff;
 }
 h1,
@@ -66,7 +66,7 @@ h6 {
     transition: all 0.5s;
     &:hover,
     &:active {
-        color: $main-color;
+        color: $main-color2;
     }
   }
 }
@@ -80,7 +80,7 @@ a {
     text-decoration: none !important;
     outline: none !important;
     box-shadow: none !important;
-    color: $main-color;
+    color: $main-color2;
   }
 }
 p {
@@ -109,37 +109,13 @@ button {
   }
 }
 
-/* General calsses */
+/* General classes */
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
   position: relative;
   background-color: #fff;
 }
-.section-title {
-  text-align: center;
-  margin-bottom: 70px;
-  h2 {
-    margin-bottom: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 30px;
-  }
-  .divider {
-    display: block;
-    height: 1px;
-    width: 50px;
-    margin: 17px auto 15px;
-    background-color: $main-color;
-  }
-}
-.page-title {
-  padding: 60px 0;
-  background-color: #353d48;
-  .page-title-content{
-    h2 {
-      color: #fff;
-      margin: 0;
-    }
-  }
+.bg-light {
+  background-color: #f0efef !important;
 }

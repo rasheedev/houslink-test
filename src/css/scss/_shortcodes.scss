@@ -4,7 +4,7 @@
 
 /* Buttons */
 .btn {
-  padding: 10px 30px;
+  padding: 10px 20px;
   font-size: 15px;
   font-weight: 600;
   transition: all 0.5s;
@@ -16,25 +16,28 @@
   border: 1px solid;
   background-color: $main-color;
   border-color: $main-color;
-  text-transform: uppercase; 
-  border-radius: 1px;
+  text-transform: capitalize; 
+  border-radius: 2px;
   &:hover,
   &:focus,
   &:active {
     color: #fff;
-    background-color: $main-hover-color;
-    border-color: $main-hover-color;
+    background-color: $main-color2;
+    border-color: $main-color2;
     outline: none !important;
   }
   &.btn-outline {
-    border: 2px solid #fff;
+    border: 2px solid $main-color;
     background-color: transparent;
+    border-radius: 2px;
+    color: $main-color;
     &:hover,
     &:focus,
     &:active {
       color: #000;
-      background-color: #fff;
-      border-color: #fff;
+      background-color: $main-color;
+      border-color: $main-color;
+      color: #fff;
     }
   }
   &.btn-link {
@@ -55,9 +58,7 @@
   label {
     font-weight: 700;
     font-size: 14px;
-    span {
-      color: $main-color;
-    }
+    color: $main-color;
   }
   .form-control {
       box-shadow: none !important;
@@ -65,9 +66,9 @@
       border: 1px solid #d7d7d7;
       border-radius: 0;
       background-color: #fff;
-      color: #fff;
+      color: $main-color;
       &:focus {
-        border-color: $main-color;
+        border-color: $main-color2;
       }
   }
   textarea {
@@ -79,5 +80,5 @@
 ::placeholder {
   color: #91a29f !important;
   opacity: 1;
-  font-size: 13px;
+  font-size: 14px;
 }

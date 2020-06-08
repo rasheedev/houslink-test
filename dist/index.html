@@ -20,14 +20,14 @@
         <button class="mainmenu-toggler"><span class="mainmenu-toggler-icon"></span><span class="mainmenu-toggler-icon"></span><span class="mainmenu-toggler-icon"></span></button>
         <div class="mainmenu-collapse">
           <ul class="mainmenu-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="index.html">Nos Activités</a></li>
-            <li><a href="index.html">Services</a></li>
-            <li><a href="index.html">Emplacement</a></li>
+            <li class="active"><a href="index.html">Accueil</a></li>
+            <li><a href="#">Nos Activités</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Emplacement</a></li>
             <li class="has-children"><a href="javascript:void(0)">Contactez-Nous</a>
               <ul class="to-left">
-                <li><a href="qui-sommes-nous.html">Nous Rejoindre</a></li>
-                <li><a href="service-apres-vente.html">Devis Gratuit</a></li>
+                <li><a href="#">Nous Rejoindre</a></li>
+                <li><a href="#">Devis Gratuit</a></li>
               </ul>
             </li>
           </ul>
@@ -55,18 +55,20 @@
             </div>
           </div>
         </section>
-        <!-- Presentation-->
-        <section id="presentation">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
+      </header>
+      <!-- Presentation-->
+      <section id="presentation">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <div class="presentation-wrap">
                 <h1 class="presentation-title">Ceci est une simulation du grand titre</h1>
                 <p class="presentation-text">Ceci est une simulation du sous titre sur deux lignes. Ceci est une simulation du sous titre sur deux lignes </p>
               </div>
             </div>
           </div>
-        </section>
-      </header>
+        </div>
+      </section>
       <!-- Services-->
       <section class="section" id="services">
         <div class="container">
@@ -182,7 +184,7 @@
               <div class="footer-detail">
                 <h5>Presse</h5>
                 <ul class="list-unstyled">
-                  <li><a href="#">Communiqués du presse</a></li>
+                  <li><a href="#">Communiqués de presse</a></li>
                   <li><a href="#">Dossiers de pressse</a></li>
                   <li><a href="#">Revue de presse</a></li>
                 </ul>
@@ -206,19 +208,19 @@
       <div class="footer-copyright">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6">
-              <p>© 2018 NZ Transport. Tout droits réservé.</p>
-            </div>
-            <div class="col-md-6">
+            <div class="col-lg-6 order-lg-2">
               <div class="newsletter">
-                <form class="form-inline justify-content-end">
-                  <div class="form-group">
+                <form>
+                  <div class="form-group mb-lg-0">
                     <label class="my-1 mr-2" for="newsletter">S'inscrire à la newsletter</label>
-                    <input class="form-control" type="text" id="newsletter" placeholder="Votre E-mail ici"/>
+                    <input class="form-control" type="text" name="newsletter" id="newsletter" placeholder="Votre E-mail ici"/>
                     <button class="btn btn-primary" type="submit"><i class="fa fa-long-arrow-right"></i></button>
                   </div>
                 </form>
               </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+              <p>© 2018 NZ Transport. Tout droits réservé.</p>
             </div>
           </div>
         </div>
