@@ -16,3 +16,4 @@ Page d'accueil du site officiel de la compagne 'NZ Transport'.
 * Bootstrap v4.5.0: https://getbootstrap.com/
 * Owl Carousel v2.3.4: https://masonry.desandro.com
 * Masonry v4.2.2: https://masonry.desandro.com
+* imagesLoaded v4.1.4: https://desandro.com

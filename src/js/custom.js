@@ -159,9 +159,12 @@ $(document).ready(function(){
     });
 
     // News Masonry
-    $('.grid').masonry({
+    var grid = $('.grid').masonry({
         itemSelector: '.grid-item',
         gutter: 0
+    });
+    grid.imagesLoaded().progress( function() {
+        grid.masonry();
     });
     
 
