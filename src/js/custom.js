@@ -8,10 +8,19 @@
 -----------------------------------------------------------------------
 ---------------------------------------------------------------------*/
 
+/* Preloader */ 
+$(window).on('load', function() { 
+    $('#preloader').delay(500).fadeOut('slow');
+    $('.spinner').delay(250).fadeOut();
+    $('body').delay(250).css({
+            'overflow': 'visible'
+    });
+});
+
+
 $(document).ready(function(){
 
     "use strict";
-
 
     // Responsive Navigation Bar
     function mobileMenu() {
@@ -94,16 +103,6 @@ $(document).ready(function(){
         $("html, body").animate({
             scrollTop: 0
         }, 1000);
-    });
-
-
-    /* Preloader */ 
-    $(window).on('load', function() { 
-        $('#preloader').delay(500).fadeOut('slow');
-        $('.spinner').delay(250).fadeOut();
-        $('body').delay(250).css({
-                'overflow': 'visible'
-        });
     });
 
 
