@@ -122,12 +122,12 @@ $(document).ready(function(){
     // Services Carousel
     $('#owl-services').owlCarousel({ 
         items: 3,
+        nav: true,
         loop: true,
         margin: 40,
         autoplayHoverPause: true,
         autoplay: 2500,
         mouseDrag: true,
-        nav: true,
         dots: false, 
         navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
         responsive: {

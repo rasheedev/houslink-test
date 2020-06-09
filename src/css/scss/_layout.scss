@@ -63,7 +63,7 @@
             .presentation-title {
                 color: #fff;
                 font-size: 26px;
-                font-weight: 800;
+                font-weight: 700;
                 text-transform: uppercase;
                 margin-bottom: 15px;
             }
@@ -82,16 +82,25 @@
             .service-icon {
                 margin-bottom: 15px;
                 position: relative;
-                img {
+                .img-icon {
                     max-width: 140px;
                     max-height: 140px;
+                    display: block;
+                    margin: 0 auto;
+                    position: absolute;
+                    left: calc(50% - 70px);
+                    top: calc(50% - 70px);
+                }
+                .img-forme {
+                    max-width: 170px;
+                    max-height: 170px;
                     display: block;
                     margin: 0 auto;
                 }
             }
             .service-title {
                 color: $main-color;
-                font-weight: 600;
+                font-weight: 700;
                 font-size: 20px;
                 text-transform: uppercase;
             }
@@ -104,30 +113,27 @@
         .owl-carousel {
             position: relative;
             .owl-nav {
+                display: block !important;
                 button {
                     position: absolute;
-                    top: calc(50% - 40px);
-                    font-size: 30px;
-                    width: 43px;
-                    height: 80px;
-                    background: rgba(0,0,0,0.25);
-                    color: #fff;
-                    border-radius: 2px;
+                    top: calc(50% - 30px);
+                    font-size: 60px;
+                    color: $main-color;
                     transition: all .5s;
                     i {
                         display: block;
                     }
                     &:hover {
-                        background: rgba(0,0,0,.6);
+                        color: $main-color2;
                     }
                     &.owl-prev {
-                        left: 10px;
+                        left: 0;
                         i {
                             margin-right: 2px;
                         }
                     }
                     &.owl-next {
-                        right: 10px;
+                        right: 0;
                         i {
                             margin-left: 2px;
                         }
