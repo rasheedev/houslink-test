@@ -145,6 +145,24 @@ $(document).ready(function(){
             }
         }
     });
+
+    // News Carousel
+    $("#news-home").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        autoplayHoverPause: true,
+        autoplay: 2000,
+        mouseDrag: true,
+        dots:false,
+        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+    });
+
+    // News Masonry
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        gutter: 0
+    });
     
 
 });

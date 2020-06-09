@@ -119,3 +119,12 @@ button {
 .bg-light {
   background-color: #f0efef !important;
 }
+
+/* Masonry */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid-item {
+}
